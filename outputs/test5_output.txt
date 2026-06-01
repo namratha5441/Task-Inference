@@ -1,0 +1,74 @@
+(venv) nc25876-parvathaneninamratha@Ninja-ITs-MacBook-Air qwen_task_inference % python infer_v0.py
+Loading model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 2 files: 100%|█████████████████████████████| 2/2 [00:00<00:00, 25970.92it/s]
+Download complete: : 0.00B [00:00, ?B/s]                       | 0/2 [00:00<?, ?it/s]
+Loading weights: 100%|████████████████████████████| 824/824 [00:07<00:00, 115.69it/s]
+Model loaded!
+Running inference...
+
+RAW OUTPUT:
+
+system
+You are a helpful assistant.
+user
+
+You are an expert visual reasoning AI.
+
+Analyze the image carefully.
+
+Your job:
+1. Describe the scene
+2. Detect important objects
+3. Detect possible issues/problems
+4. Infer actionable tasks
+
+Allowed tasks:
+['clean', 'repair', 'replace', 'inspect', 'organize', 'remove', 'install', 'arrange', 'check', 'monitor']
+
+Return STRICT JSON ONLY.
+
+Schema:
+{
+    "scene_description": "",
+    "detected_objects": [],
+    "possible_issues": [],
+    "suggested_tasks": [],
+    "confidence": "low/medium/high"
+}
+
+Rules:
+- Only output valid JSON
+- Avoid hallucinations
+- Be concise
+- Tasks must be visually supported
+
+assistant
+```json
+{
+    "scene_description": "The image shows a clothing store with racks of clothes displayed on shelves. The clothes include various types such as shirts, pants, and jackets in different colors and styles.",
+    "detected_objects": [
+        "clothes",
+        "racks",
+        "shelves",
+        "clothing items (shirts, pants, jackets)"
+    ],
+    "possible_issues": [
+        "Clothes are not neatly arranged, making it difficult to find specific items quickly.",
+        "Some clothes are hanging loosely, which may cause them to get wrinkled or damaged over time."
+    ],
+    "suggested_tasks": [
+        "Organize the clothes by color and style for easier navigation.",
+        "Regularly check and straighten the clothes to prevent wrinkles and damage."
+    ],
+    "confidence": "high"
+}
+```
+
+Failed to parse JSON
+Extra data: line 9 column 1 (char 152)
+
+-----------------------------------
+Inference Time : 30.00 seconds
+Total Runtime  : 49.76 seconds
+-----------------------------------

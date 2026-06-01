@@ -1,0 +1,13 @@
+{
+    "scene_description": "A well-lit supermarket shelf stocked with various packaged sausages and cured meats, arranged in multiple rows with price tags.",
+    "possible_issues": [],
+    "suggested_tasks": [
+        {
+            "task": "good_assortment",
+            "instruction": "no issues detected, the assortment is properly stocked and arranged.",
+            "evidence": "All shelves are filled with products, and there are no visible signs of empty shelves, spilled products, or damaged packaging."
+        }
+    ],
+    "overall_assessment": "good assortment",
+    "confidence": "high"
+}

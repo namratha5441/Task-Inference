@@ -1,0 +1,79 @@
+(venv) nc25876-parvathaneninamratha@Ninja-ITs-MacBook-Air qwen_task_inference % python infer_v0.py
+Loading model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 2 files: 100%|█████████████████████████████| 2/2 [00:00<00:00, 24385.49it/s]
+Download complete: : 0.00B [00:00, ?B/s]                       | 0/2 [00:00<?, ?it/s]
+Loading weights: 100%|█████████████████████████████| 824/824 [00:09<00:00, 89.40it/s]
+Model loaded!
+Running inference...
+
+RAW OUTPUT:
+
+system
+You are a helpful assistant.
+user
+
+You are an expert visual reasoning AI.
+
+Analyze the image carefully.
+
+Your job:
+1. Describe the scene
+2. Detect important objects
+3. Detect possible issues/problems
+4. Infer actionable tasks
+
+Allowed tasks:
+['clean', 'repair', 'replace', 'inspect', 'organize', 'remove', 'install', 'arrange', 'check', 'monitor']
+
+Return STRICT JSON ONLY.
+
+Schema:
+{
+    "scene_description": "",
+    "detected_objects": [],
+    "possible_issues": [],
+    "suggested_tasks": [],
+    "confidence": "low/medium/high"
+}
+
+Rules:
+- Only output valid JSON
+- Avoid hallucinations
+- Be concise
+- Tasks must be visually supported
+
+assistant
+```json
+{
+    "scene_description": "The image shows a clothing store with various racks and shelves displaying an assortment of clothes. The store has a modern design with wooden floors and white walls, and there is a large mirror on the left side reflecting part of the store.",
+    "detected_objects": [
+        "clothes on racks",
+        "shelves with clothes",
+        "large mirror",
+        "wooden floor",
+        "white walls",
+        "potted plants",
+        "lights on the ceiling"
+    ],
+    "possible_issues": [
+        "clothes not neatly arranged",
+        "shelves cluttered with clothes",
+        "floor space not充分利用"
+    ],
+    "suggested_tasks": [
+        "Organize clothes on racks",
+        "Clear shelves to make space",
+        "Arrange clothes neatly on shelves"
+    ],
+    "confidence": "high"
+}
+```
+
+Failed to parse JSON
+Extra data: line 9 column 1 (char 152)
+
+-----------------------------------
+Inference Time : 30.04 seconds
+Total Runtime  : 52.68 seconds
+-----------------------------------

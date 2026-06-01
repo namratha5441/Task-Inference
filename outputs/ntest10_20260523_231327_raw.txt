@@ -1,0 +1,16 @@
+{
+    "scene_description": "A man is sitting on the floor of a grocery store aisle, appearing to be injured or in pain, while a store employee kneels beside him. The employee is pointing at the floor, possibly indicating a spill or an issue. A yellow 'Caution Wet Floor' sign is visible in the background. The aisle is lined with shelves stocked with various products, including dairy and other packaged goods.",
+    "possible_issues": [
+        "spill on the floor",
+        "injured person on the floor"
+    ],
+    "suggested_tasks": [
+        {
+            "task": "clean",
+            "instruction": "clean the area around the injured person and the spill",
+            "evidence": "a white liquid spill is visible on the floor near the man's feet"
+        }
+    ],
+    "overall_assessment": "good assortment",
+    "confidence": "high"
+}

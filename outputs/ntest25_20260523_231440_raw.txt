@@ -1,0 +1,13 @@
+{
+    "scene_description": "A wooden table with two bunches of overripe bananas.",
+    "possible_issues": [],
+    "suggested_tasks": [
+        {
+            "task": "good_assortment",
+            "instruction": "no issues visible",
+            "evidence": "The bananas are properly arranged and appear to be in good condition, with no signs of spoilage or missing items."
+        }
+    ],
+    "overall_assessment": "good assortment",
+    "confidence": "high"
+}

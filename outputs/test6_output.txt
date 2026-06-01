@@ -1,0 +1,76 @@
+Running inference...
+
+RAW OUTPUT:
+
+system
+You are a helpful assistant.
+user
+
+You are an expert visual reasoning AI.
+
+Analyze the image carefully.
+
+Your job:
+1. Describe the scene
+2. Detect important objects
+3. Detect possible issues/problems
+4. Infer actionable tasks
+
+Allowed tasks:
+['clean', 'repair', 'replace', 'inspect', 'organize', 'remove', 'install', 'arrange', 'check', 'monitor']
+
+Return STRICT JSON ONLY.
+
+Schema:
+{
+    "scene_description": "",
+    "detected_objects": [],
+    "possible_issues": [],
+    "suggested_tasks": [],
+    "confidence": "low/medium/high"
+}
+
+Rules:
+- Only output valid JSON
+- Avoid hallucinations
+- Be concise
+- Tasks must be visually supported
+
+assistant
+```json
+{
+    "scene_description": "The image shows a pantry shelf stocked with various canned goods, snacks, and other food items. The shelves are filled with a mix of brands and types of products.",
+    "detected_objects": [
+        {
+            "name": "Canned goods",
+            "location": "Shelves",
+            "description": "A variety of canned goods including soups, beans, and vegetables."
+        },
+        {
+            "name": "Snacks",
+            "location": "Shelves",
+            "description": "Packets of nuts, cookies, and other packaged snacks."
+        },
+        {
+            "name": "Bottles",
+            "location": "Shelves",
+            "description": "Various bottles of sauces and condiments."
+        }
+    ],
+    "possible_issues": [
+        "Overcrowding",
+        "Lack of organization",
+        "Potential for spoilage due to limited visibility"
+    ],
+    "suggested_tasks": [
+        "Organize the pantry",
+        "Remove excess items",
+        "Check expiration dates"
+    ],
+    "confidence": "high"
+}
+```
+
+Failed to parse JSON
+Extra data: line 9 column 1 (char 152)
+(venv) nc25876-parvathaneninamratha@Ninja-ITs-MacBook-Air qwen_task_inference % 

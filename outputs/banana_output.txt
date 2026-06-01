@@ -1,0 +1,20 @@
+{
+    "scene_description": "A bunch of ripe bananas with significant brown spotting and dark bruising resting on a dark reflective surface.",
+    "possible_issues": [
+        "overripe bananas with heavy dark spotting and bruising"
+    ],
+    "suggested_tasks": [
+        {
+            "task": "freshness_check",
+            "instruction": "Inspect bananas for spoilage, mold, or excessive bruising that may affect quality.",
+            "evidence": "Bananas show extensive dark brown/black spotting and large areas of discoloration consistent with overripeness."
+        },
+        {
+            "task": "clean",
+            "instruction": "Clean the surface to remove banana residue and ensure hygiene.",
+            "evidence": "Bananas are resting directly on a dark, reflective surface with visible residue and potential staining."
+        }
+    ],
+    "overall_assessment": "overripe bananas with heavy spotting and bruising",
+    "confidence": "high"
+}

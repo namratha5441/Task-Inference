@@ -1,0 +1,13 @@
+FAILED TO PARSE JSON
+
+No JSON found in model output
+
+RAW OUTPUT:
+
+```json
+{
+ scene{
+{
+{
+"Scene{
+A clothing store with various clothes hanging on racks and display racks, clothes on shelves, clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks clothes on racks

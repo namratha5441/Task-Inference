@@ -1,0 +1,13 @@
+{
+    "scene_description": "A close-up of a metal can with a pull-tab, showing printed text and a date.",
+    "possible_issues": [],
+    "suggested_tasks": [
+        {
+            "task": "check_expiry",
+            "instruction": "Check the expiry date on the can.",
+            "evidence": "The text on the can reads 'F02 C045 LC242 EBE AUG 2009'."
+        }
+    ],
+    "overall_assessment": "good assortment",
+    "confidence": "high"
+}

@@ -1,0 +1,8 @@
+{
+    "scene_description": "A well-lit clothing store with wooden floors and exposed ceiling beams. Clothing racks are filled with garments, and a display table with folded clothes and accessories is visible. Potted plants are placed throughout the space, adding greenery. The store appears organized and inviting.",
+    "detected_objects": [
+        "clothing racks",
+        "hanging clothes",
+        "display table",
+        "potted plants",
+        "wooden floor",

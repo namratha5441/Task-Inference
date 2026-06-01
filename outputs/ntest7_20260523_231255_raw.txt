@@ -1,0 +1,16 @@
+{
+    "scene_description": "A grocery store aisle with a spilled red liquid on the tiled floor, likely wine, and a shelf of bottles in the background.",
+    "possible_issues": [
+        "spill on the floor",
+        "bottles on the floor"
+    ],
+    "suggested_tasks": [
+        {
+            "task": "clean",
+            "instruction": "clean the area around the spill",
+            "evidence": "a large red liquid spill on the tiled floor"
+        }
+    ],
+    "overall_assessment": "good assortment",
+    "confidence": "high"
+}

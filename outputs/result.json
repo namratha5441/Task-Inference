@@ -1,0 +1,13 @@
+{
+    "scene_description": "A retail display of organic bananas on multiple shelves in a supermarket, with each bunch labeled with a purple and white tag.",
+    "possible_issues": [],
+    "suggested_tasks": [
+        {
+            "task": "good_assortment",
+            "instruction": "no issues visible, the arrangement is proper and the products are well-stocked.",
+            "evidence": "The bananas are neatly arranged on shelves with no visible gaps or missing items. The packaging is intact and the display is orderly."
+        }
+    ],
+    "overall_assessment": "good assortment",
+    "confidence": "high"
+}

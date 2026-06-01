@@ -1,0 +1,74 @@
+Running inference...
+
+RAW OUTPUT:
+
+system
+You are a helpful assistant.
+user
+
+You are an expert visual reasoning AI.
+
+Analyze the image carefully.
+
+Your job:
+1. Describe the scene
+2. Detect important objects
+3. Detect possible issues/problems
+4. Infer actionable tasks
+
+Allowed tasks:
+['clean', 'repair', 'replace', 'inspect', 'organize', 'remove', 'install', 'arrange', 'check', 'monitor']
+
+Return STRICT JSON ONLY.
+
+Schema:
+{
+    "scene_description": "",
+    "detected_objects": [],
+    "possible_issues": [],
+    "suggested_tasks": [],
+    "confidence": "low/medium/high"
+}
+
+Rules:
+- Only output valid JSON
+- Avoid hallucinations
+- Be concise
+- Tasks must be visually supported
+
+assistant
+```json
+{
+    "scene_description": "The image shows a well-lit grocery store aisle with various products displayed on shelves and tables. The shelves are stocked with items such as cereals, snacks, beverages, and other packaged goods. There are also some fresh produce items visible in the background.",
+    "detected_objects": [
+        "cereals",
+        "snacks",
+        "beverages",
+        "packaged goods",
+        "fresh produce",
+        "shelves",
+        "tables",
+        "lights",
+        "signage"
+    ],
+    "possible_issues": [
+        "disorganized product placement",
+        "potential spillage or damage to products",
+        "inadequate lighting for visibility"
+    ],
+    "suggested_tasks": [
+        "organize product placement",
+        "clean up any spills or damages",
+        "check and replace any damaged products"
+    ],
+    "confidence": "high"
+}
+```
+
+Failed to parse JSON
+Extra data: line 9 column 1 (char 152)
+
+-----------------------------------
+Inference Time : 32.14 seconds
+Total Runtime  : 52.56 seconds
+-----------------------------------

@@ -1,0 +1,88 @@
+(venv) nc25876-parvathaneninamratha@Ninja-ITs-MacBook-Air qwen_task_inference % python infer_v0.py
+Loading model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 2 files: 100%|█████████████████████████████| 2/2 [00:00<00:00, 10407.70it/s]
+Download complete: : 0.00B [00:00, ?B/s]                       | 0/2 [00:00<?, ?it/s]
+Loading weights: 100%|█████████████████████████████| 824/824 [00:15<00:00, 52.30it/s]
+Some parameters are on the meta device because they were offloaded to the disk.
+Model loaded!
+Running inference...
+
+RAW OUTPUT:
+
+system
+You are a helpful assistant.
+user
+
+You are an expert visual reasoning AI.
+
+Analyze the image carefully.
+
+Your job:
+1. Describe the scene
+2. Detect important objects
+3. Detect possible issues/problems
+4. Infer actionable tasks
+
+Allowed tasks:
+['clean', 'repair', 'replace', 'inspect', 'organize', 'remove', 'install', 'arrange', 'check', 'monitor']
+
+Return STRICT JSON ONLY.
+
+Schema:
+{
+    "scene_description": "",
+    "detected_objects": [],
+    "possible_issues": [],
+    "suggested_tasks": [],
+    "confidence": "low/medium/high"
+}
+
+Rules:
+- Only output valid JSON
+- Avoid hallucinations
+- Be concise
+- Tasks must be visually supported
+
+assistant
+```json
+{
+    "scene_description": "The image shows a clothing store with various racks and shelves displaying an assortment of clothes. The store has a modern design with wooden floors and white walls, and there is a large mirror on the left side reflecting part of the store.",
+    "detected_objects": [
+        "clothes on racks",
+        "shelves with clothes",
+        "large mirror",
+        "wooden floor",
+        "white walls",
+        "potted plants",
+        "lights on the ceiling"
+    ],
+    "possible_issues": [
+        "clothes not neatly arranged",
+        "shelves cluttered
+
+PARSED JSON:
+
+{
+    "scene_description": "",
+    "detected_objects": [],
+    "possible_issues": [],
+    "suggested_tasks": [],
+    "confidence": "low/medium/high"
+}
+
+Saved to outputs/result.json
+
+-----------------------------------
+Inference Time : 344.79 seconds
+Total Runtime  : 372.09 seconds
+-----------------------------------
+
+
+
+Saved to outputs/result.json
+
+-----------------------------------
+Inference Time : 21.17 seconds
+Total Runtime  : 42.64 seconds
+-----------------------------------

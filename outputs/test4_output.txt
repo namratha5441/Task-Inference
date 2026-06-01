@@ -1,0 +1,63 @@
+Running inference...
+
+RAW OUTPUT:
+
+system
+You are a helpful assistant.
+user
+
+You are an expert visual reasoning AI.
+
+Analyze the image carefully.
+
+Your job:
+1. Describe the scene
+2. Detect important objects
+3. Detect possible issues/problems
+4. Infer actionable tasks
+
+Allowed tasks:
+['clean', 'repair', 'replace', 'inspect', 'organize', 'remove', 'install', 'arrange', 'check', 'monitor']
+
+Return STRICT JSON ONLY.
+
+Schema:
+{
+    "scene_description": "",
+    "detected_objects": [],
+    "possible_issues": [],
+    "suggested_tasks": [],
+    "confidence": "low/medium/high"
+}
+
+Rules:
+- Only output valid JSON
+- Avoid hallucinations
+- Be concise
+- Tasks must be visually supported
+
+assistant
+```json
+{
+    "scene_description": "The image shows a grocery store shelf with various products, including bottled water and other beverages. The floor in front of the shelf appears to be wet or dirty, possibly due to spills or cleaning activities.",
+    "detected_objects": [
+        "bottled water",
+        "other beverages",
+        "floor (wet/dirty)"
+    ],
+    "possible_issues": [
+        "spills on the floor",
+        "dirty or wet floor",
+        "potential slipping hazard"
+    ],
+    "suggested_tasks": [
+        "clean the floor",
+        "inspect the shelf for any spills",
+        "remedy the slippery condition if necessary"
+    ],
+    "confidence": "high"
+}
+```
+
+Failed to parse JSON
+Extra data: line 9 column 1 (char 152)

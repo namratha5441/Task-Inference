@@ -1,0 +1,13 @@
+{
+    "scene_description": "A bunch of bananas on a wooden surface, showing a progression from green to yellow to brown, indicating different ripeness stages.",
+    "possible_issues": [],
+    "suggested_tasks": [
+        {
+            "task": "good_assortment",
+            "instruction": "no issues detected, the bananas are properly arranged and appear fresh.",
+            "evidence": "The bananas are neatly arranged in a row, showing a natural progression in ripeness, with no signs of spoilage, damage, or missing items."
+        }
+    ],
+    "overall_assessment": "good assortment",
+    "confidence": "high"
+}

@@ -1,0 +1,22 @@
+{
+    "scene_description": "A retail store aisle with refrigerated milk shelves, a child standing in front of them, and a shopping cart.",
+    "possible_issues": [
+        "The milk shelves are mostly empty, with no visible products.",
+        "The front of the milk shelves appears to be empty, suggesting a need for restocking.",
+        "The child is standing in front of the shelves, possibly indicating a need to check or adjust the display."
+    ],
+    "suggested_tasks": [
+        {
+            "task": "refill the stock",
+            "instruction": "Add milk products to the refrigerated shelves.",
+            "evidence": "The shelves are mostly empty, with no visible products."
+        },
+        {
+            "task": "front_face",
+            "instruction": "Place the milk products at the front of the shelves.",
+            "evidence": "The front of the shelves appears to be empty, suggesting a need to reposition items."
+        }
+    ],
+    "overall_assessment": "good assortment",
+    "confidence": "high"
+}
